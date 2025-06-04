@@ -26,15 +26,9 @@
 <style>
 
     .fixed-block {
-      position: fixed;
-      left: 0;
-      /* Дополнительные стили, например, для ширины и высоты */
-      width: 100%; /* Пример, чтобы блок занимал всю ширину экрана */
-      height: auto; /* Пример высоты блока */
-      background-color: #f0f0f0; /* Пример фона */
-      padding: 10px; /* Пример отступов внутри блока */
-      /* Дополнительные стили по вашему усмотрению */
+        display: none;
     }
+
     .dropup-icon-block {
         width: 20%;
     }
@@ -45,13 +39,18 @@
     .dop-navbar {
         display: none;
           }
-        }
-
-@media screen and (min-width: 900px) {
     .fixed-block {
-        display: none;
-          }
+          position: fixed;
+          left: 0;
+          /* Дополнительные стили, например, для ширины и высоты */
+          width: 100%; /* Пример, чтобы блок занимал всю ширину экрана */
+          height: auto; /* Пример высоты блока */
+          background-color: #f0f0f0; /* Пример фона */
+          padding: 10px; /* Пример отступов внутри блока */
+          /* Дополнительные стили по вашему усмотрению */
         }
+    }
+
 </style>
     <body>
         <div class="page-wrap">
