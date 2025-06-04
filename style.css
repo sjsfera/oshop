@@ -13,3 +13,10 @@ p img {
 a:hover {
     color: blue;
 }
+
+
+@media screen and (min-width: 900px) {
+  .nav-link {
+    display: none;
+  }
+}
