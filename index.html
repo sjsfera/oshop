@@ -27,7 +27,6 @@
 
     .fixed-block {
       position: fixed;
-      bottom: 0;
       left: 0;
       /* Дополнительные стили, например, для ширины и высоты */
       width: 100%; /* Пример, чтобы блок занимал всю ширину экрана */
@@ -44,6 +43,12 @@
     }
 @media screen and (max-width: 900px) {
     .dop-navbar {
+        display: none;
+          }
+        }
+
+@media screen and (min-width: 900px) {
+    .fixed-block {
         display: none;
           }
         }
@@ -133,7 +138,7 @@
 <!-- КІНЕЦЬ: НАВІГАЦІЯ ПО САЙТУ після 1024 -->
 
 <!-- ПОЧАТОК: НАВІГАЦІЯ ПО САЙТУ до 1024 -->
-<div class="container-fluid fixed-block">
+<div class="container-fluid fixed-block mb-3">
     <div class="d-flex flex-wrap">
       <div class="dropup dropup-icon-block d-flex flex-column">
         <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
