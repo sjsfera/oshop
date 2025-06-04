@@ -27,6 +27,17 @@
     .dropdown-toggle::after {
         display:none;
     }
+    .fixed-block {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      /* Дополнительные стили, например, для ширины и высоты */
+      width: 100%; /* Пример, чтобы блок занимал всю ширину экрана */
+      height: 50px; /* Пример высоты блока */
+      background-color: #f0f0f0; /* Пример фона */
+      padding: 10px; /* Пример отступов внутри блока */
+      /* Дополнительные стили по вашему усмотрению */
+    }
 @media screen and (max-width: 900px) {
     .page-wrap {
         display: none;
@@ -114,7 +125,7 @@
 <!-- КІНЕЦЬ: НАВІГАЦІЯ ПО САЙТУ після 1024 -->
 
 <!-- ПОЧАТОК: НАВІГАЦІЯ ПО САЙТУ до 1024 -->
-  <div class="dropup">
+  <div class="dropup fixed-block">
     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
       Dropup button
     </button>
