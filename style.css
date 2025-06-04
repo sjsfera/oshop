@@ -7,7 +7,7 @@ a {
 
 p img {
     position: relative;
-    float: right;
+    float: none;
 }
 
 a:hover {
