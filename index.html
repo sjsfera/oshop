@@ -220,15 +220,29 @@
     <p class="text">"To be continue..." <span>@..walking to my dear costumer =)</span> </p>
 
 <!------------->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <a class="navbar-brand" href="#">Offcanvas navbar</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Переключить навигацию">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="offcanvas offcanvas-end" tabindex="0" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-    <li><a class="dropdown-item" href="https://prom.ua/ua/c122195-internet-magazin-sokrovischa.html">ОШОП</a></li>
+<!-- Кнопка-триггер модального окна -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Запустить модальное окно со статическим фоном
+</button>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Заголовок модального окна</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Понял</button>
+      </div>
+    </div>
   </div>
-</nav>
+</div>
 <!------------->
         
 </body>
