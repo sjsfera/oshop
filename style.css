@@ -16,7 +16,7 @@ a:hover {
 
 
 @media screen and (max-width: 900px) {
-  .nav-link {
+  .page-wrap {
     display: none;
   }
 }
