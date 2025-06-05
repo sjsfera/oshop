@@ -1,6 +1,12 @@
-* {font-family: Comic Sans MS; text-decoration: none;}
-
-
+* {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+    font-size: var(--pds-font-size-default);
+    line-height: var(--pds-line-height);
+    font-weight: 400;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
 a {
     color: green;
 }
