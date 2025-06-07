@@ -523,31 +523,28 @@
 <!------КНОПКА №2 - ФІНІШ------->
 <!------КНОПКА №3 - СТАРТ------->
 <div class="dropup-icon-block d-flex justify-content-center">
-    <!-- Кнопка-триггер модального окна -->
-    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+    <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptionsCart" aria-controls="offcanvasWithBothOptionsCart">
         <svg width="1em" height="1em" viewBox="0 0 24 24" data-testid="SvgCart" data-qaid="SvgCart" focusable="false" aria-hidden="true" tabindex="-1" class="D8VyR ya7ul" style="width: 24px; height: 24px;"><path fill="currentColor" d="M17.537 12.454A1.993 1.993 0 0 1 15.59 14h-5.23c-.92 0-1.718-.624-1.94-1.517L7.053 7h11.754l-1.27 5.454ZM6.555 5l-.498-2H3a1 1 0 1 0 0 2h1.494l1.983 7.967A3.995 3.995 0 0 0 10.36 16h5.23a3.982 3.982 0 0 0 3.895-3.093L21.326 5H6.556ZM10 18A2 2 0 1 0 10.001 22 2 2 0 0 0 10 18Zm6 0A2 2 0 1 0 16.001 22 2 2 0 0 0 16 18Z"></path></svg>  
-        <div class="text-icon">Корзина</div>  
+        <div class="text-icon">Корзина</div>         
     </button>
     
-    <!-- Модальное окно -->
-    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">Заголовок модального окна</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-            <button type="button" class="btn btn-primary">Понял</button>
-          </div>
-        </div>
+    <div class="offcanvas offcanvas-bottom" style="z-index:9999; max-width: 90%; bottom: 10%;" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptionsCart" aria-labelledby="offcanvasWithBothOptionsCartLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsCartLabel">Backdrop with scrolling</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+                           <a class="list-group-item" href="#">Краса</a>
+                           <a class="list-group-item" href="#">Дім</a>
+                           <a class="list-group-item" href="#">Подарунки</a>
+                           <a class="list-group-item" href="#">Аксесуари</a>
+                            <hr class="divider">
+                           <a class="list-group-item" href="#">Інше</a>
       </div>
     </div>
 </div>
+
+
 <!------КНОПКА №3 - ФІНІШ------->
 <!------КНОПКА №4 - СТАРТ------->
 <div class="dropup-icon-block d-flex justify-content-center">
