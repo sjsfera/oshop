@@ -83,7 +83,12 @@
         --pds-round-4xl: 18px;
         --pds-round-5xl: 20px;
     }
-
+.col-box-filters {
+    width:30%;
+}
+.col-box-contents {
+    width:70%;
+}
 
 @media screen and (max-width: 900px) {
     .lg-navbar-d {
@@ -205,9 +210,9 @@
 </header>
     
 <div class="page-wrap">
-    <div class="container-fluid d-flex flex-wrap">
-        <div class="d-flex">
-            <div class="card-box col-6 col-sm-4 col-md-3 col-lg-2 p-2">
+    <div class="container-fluid d-flex">
+        <div class="col-box-filters">
+            <div class="p-2">
                 <div class="card">
                   <img src="https://images.prom.ua/6516978529_w200_h200_igrushka-stich-disnej.jpg" class="card-img-top bg-warning" alt="...">
                   <div class="card-body p-2">
@@ -227,8 +232,8 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex flex-wrap">
-            
+        
+        <div class="d-flex flex-wrap col-box-contents">  
 <div class="card-box col-6 col-sm-4 col-md-3 col-lg-2 p-2">
     <div class="card">
       <img src="https://images.prom.ua/6516978529_w200_h200_igrushka-stich-disnej.jpg" class="card-img-top bg-warning" alt="...">
