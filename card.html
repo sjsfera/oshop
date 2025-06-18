@@ -101,6 +101,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+.card-lg-box {
+    display:flex;
+    flex-wrap: wrap;
+}
+.card-md-box {
+    display:none;
+}
 @media screen and (max-width: 1024px) {
 .col-box-filters {
     width:32%;
@@ -110,11 +117,11 @@
 }    
 }
 @media screen and (max-width: 912px) {
-    .lg-navbar-d {
-        display: none;
+.lg-navbar-d {
+    display: none;
           }
-    .fixed-block {
-          display: block;
+.fixed-block {
+    display: block;
           /*position: absolute;
           bottom: 0px;
           left: 0;*/
@@ -125,15 +132,19 @@
          /* padding: 10px;  Пример отступов внутри блока */
           /* Дополнительные стили по вашему усмотрению */
         }
-    .col-box-filters {
-       display: none;
-    }
-    .col-box-contents {
-        width:100%;
-    }
-    .card-lg-box {
-        display:none;
-    }
+.col-box-filters {
+    display: none;
+}
+.col-box-contents {
+    width:100%;
+}
+.card-lg-box {
+    display:none;
+}
+.card-md-box {
+    display:flex;
+}
+}
 </style>
     
 <body style="background-color: #f4f4f9;">
@@ -245,7 +256,7 @@
           </ol>
         </nav>
     </div>
-    <div class="card-lg-box container-fluid d-flex flex-wrap px-3">
+    <div class="card-lg-box container-fluid px-3">
         <div class="col-lg-8 bg-white rounded-3">
             <div class="pers-card-box-img container-fluid d-flex">
                 <div class="col-2 d-flex flex-column">
@@ -264,7 +275,7 @@
             bichna panel
         </div>
     </div>
-    <div class="card-lg-box container-fluid d-flex flex-wrap px-3">
+    <div class="card-md-box container-fluid px-3">
         Мобільна версія в процессі.
     </div>
 </div>
